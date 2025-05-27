@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1e1e2f;
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #242436;
+}
+
+/* Style for project headers */
+header h1 {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4fc3f7;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4fc3f7;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #242436;
+}
+
+/* Style for the Hero section */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  border: 3px solid #4fc3f7; /* Blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.btn {
+  background: #4fc3f7;
+  color: #1e1e2f;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #4fc3f7;
+  color: #4fc3f7;
+}
+
+.btn:hover {
+  background: #0288d1;
+  color: #fff;
+}
+
+section {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.about p,
+.contact p,
+.skills li {
+  color: #cccccc;
+}
+
+.skills ul {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background: #2e2e40;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+/* Style for skill buttons */
+.skills-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills-buttons .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  background: #4fc3f7;
+  color: #1e1e2f;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-buttons .btn:hover {
+  background: #0288d1;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Style for the Projects section */
+.projects {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.projects-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.projects-buttons .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  text-align: center;
+  text-decoration: none;
+  background: #4fc3f7;
+  color: #1e1e2f;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.projects-buttons .btn:hover {
+  background: #0288d1;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.project-card {
+  background: #2e2e40;
+  padding: 20px;
+  margin-top: 20px;
+  border-left: 5px solid #4fc3f7;
+  border-radius: 5px;
+}
+
+.project-card a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Review Section Styles */
+#review-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#review-form label {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+#review-form input,
+#review-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #2e2e40;
+  color: #ffffff;
+}
+
+#review-form input:focus,
+#review-form textarea:focus {
+  border-color: #0288d1; /* Highlight border on focus */
+  box-shadow: 0 0 5px #0288d1; /* Glow effect on focus */
+  outline: none;
+}
+
+#review-form button {
+  align-self: flex-start;
+  background: #4fc3f7;
+  color: #1e1e2f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#review-form button:hover {
+  background: #0288d1;
+  color: #ffffff;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+#reviews {
+  margin-top: 20px;
+  background: #2e2e40;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#reviews h3 {
+  color: #ffffff;
+}
+
+#reviews p {
+  color: #cccccc;
+  margin: 5px 0;
+}
+
+/* About Section Styles */
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.about-text {
+  max-width: 600px;
+  background: #2e2e40; /* Matching color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  color: #cccccc;
+  line-height: 1.8;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  border: 3px solid #4fc3f7; /* Blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  line-height: 1.8;
+  max-width: 600px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #242436;
+  color: #aaa;
+  margin-top: 40px;
+}
